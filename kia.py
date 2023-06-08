@@ -1,14 +1,4 @@
-# Name:  Lachlan Hann
-# Student Number:  10565410
-
-# This file is provided to you as a starting point for the "kia.py" program of the Project
-# of Programming Principles in Semester 1, 2023.  It aims to give you just enough code to help ensure
-# that your program is well structured.  Please use this file as the basis of your work.
-# You are not required to reference it.
-
-# The "pass" command tells Python to do nothing.  It is simply a placeholder to ensure that the starter file runs smoothly.
-# They are not needed in your completed program.  Replace them with your own code as you complete the assignment.
-
+# https://github.com/GrandEmperorBinks
 
 # Import the necessary module(s).
 import tkinter
@@ -20,9 +10,6 @@ class ProgramGUI:
 
     def __init__(self):
         # This is the constructor of the class.
-        # It is responsible for loading the data from the text file and creating the user interface.
-        # See the "Constructor of the GUI Class of kia.py" section of the assignment brief.
-        
         #Load JSON file
         try:
             self.file = open('data.txt', 'r')
@@ -64,8 +51,6 @@ class ProgramGUI:
     def set_category(self):
         # This method displays the name of the current category in the GUI.
         # It also creates some useful attributes and ends the program after the final category.
-        # See Point 1 of the "Methods in the GUI class of kia.py" section of the assignment brief.
-        
         #Create attribute to keep track of score for this category
         self.category_score = 0
         
@@ -85,8 +70,6 @@ class ProgramGUI:
 
     def check_answer(self):
         # This method evaluates the user's answer, records their score, and displays appropriate messageboxes.
-        # See Point 2 of the "Methods in the GUI class of kia.py" section of the assignment brief.
-
         #Get users answer, and get list of correct answers
         self.current_answer = self.answer_entry.get().lower()
 
@@ -114,6 +97,3 @@ class ProgramGUI:
 
 #Create an object of the ProgramGUI class to begin the program.
 gui = ProgramGUI()
-
-
-# If you have been paid to write this program, please delete this comment.
